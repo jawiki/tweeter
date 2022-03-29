@@ -10,16 +10,33 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font: Source Sans Pro
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  font: Bungee;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  background-color: #4f4f4f;
+  color: #FFFFFF;
+}
