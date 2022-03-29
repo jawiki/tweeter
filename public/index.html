@@ -10,7 +10,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <link rel="stylesheet" href="stles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="styles/nav.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,39 +25,10 @@
     <script src="https://kit.fontawesome.com/dbd661c41c.js" crossorigin="anonymous"></script>
 
     <style>
-    nav {
-      background-color: #4056A1;
-      height: 120px;
-      border: solid;
-      border-color: #4056A1;
-      border-width: 24px;
-      font: Bungee;
-    }
     </style>
     <style>
-    span {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 24px;
-      margin-left: 24px;
-      margin-right: 24px;
-      margin-bottom: 24px;
-      font: Bungee;
-      font-size: 20px;
-      color: #FFFFFF;
-    } 
     </style>
     <style>
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      height: 400px;
-      background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-      background-color: #4f4f4f;
-      color: #FFFFFF;
-    }
     </style>
   </head>
 
@@ -84,8 +55,8 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form>
-          <label for="tweet-text">What are you humming about?</label>
+        <form action="/tweets" method="POST">
+          <label for="tweet-text">Whats goin on champ?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
             <button type="submit">Tweet</button>
@@ -97,26 +68,15 @@
     <br>
     <p>“Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of the darkness, for he is truly his brother’s keeper and the finder of lost children and I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers and you will know I am the Lord when I lay my vengeance upon you!”</p>
     <br>
-    <p>“Now… I been sayin’ that shit for years and if you ever heard it, that meant your ass. You’d be dead right now. I never gave much thought to what it meant, I just thought it was a cold-blooded thing to say to a motherfucker before I popped a cap in his ass, but I saw some shit this mornin’ made me think twice. “</p>
+    <p>“Now… I been sayin’ that sh!t for years and if you ever heard it, that meant your ass. You’d be dead right now. I never gave much thought to what it meant, I just thought it was a cold-blooded thing to say to a motherfucker before I popped a cap in his a$$, but I saw some sh!t this mornin’ made me think twice. “</p>
     <br>
-    <p>“See, now I’m thinking: maybe it means you’re the evil man and I’m the righteous man and Mr. 9 mm here, he’s the shepherd protecting my righteous ass in the valley of darkness. “</p>
+    <p>“See, now I’m thinking: maybe it means you’re the evil man and I’m the righteous man and Mr. 9 mm here, he’s the shepherd protecting my righteous a$$ in the valley of darkness. “</p>
     <br>
-    <p>“Or it could mean you’re the righteous man and I’m the shepherd and it’s the world that’s evil and selfish and I’d like that, but that shit ain’t the truth. The truth is you’re the weak and I’m the tyranny of evil men. But I’m tryin’, Ringo. I’m tryin’ real hard to be the shepherd.”
+    <p>“Or it could mean you’re the righteous man and I’m the shepherd and it’s the world that’s evil and selfish and I’d like that, but that sh!t ain’t the truth. The truth is you’re the weak and I’m the tyranny of evil men. But I’m tryin’, Ringo. I’m tryin’ real hard to be the shepherd.”
     </p>
     <br>
     </main>
     <style>
-      main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 800px;
-      font: Bungee;
-      font-size: 20px;
-      color: #FFFFFF;
-      background-color: #4056A1;
-    }
     </style>
   </body>
 </html>

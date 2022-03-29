@@ -10,26 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-
-body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
-  font: Source Sans Pro
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 800px;
-  font: Bungee;
-  font-size: 20px;
-  color: #FFFFFF;
-  background-color: #4056A1;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -39,4 +19,23 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   background-color: #4f4f4f;
   color: #FFFFFF;
+}
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: Source Sans Pro
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #4056A1;
 }
