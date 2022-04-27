@@ -7,7 +7,7 @@ nav {
   font-family: Bungee
 }
 
-span {
+.navSpan {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
@@ -18,3 +18,11 @@ span {
   font-size: 20px;
   color: #FFFFFF;
 } 
+
+div#tittle {
+  
+}
+
+div#rightTittle { 
+
+}
