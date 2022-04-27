@@ -10,12 +10,12 @@ html {
   box-sizing: inherit;
 }
 
-header {
+.top-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 400px;
+  height: 30vh;
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
   background-color: #4f4f4f;
   color: #FFFFFF;
@@ -34,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 60vh;
   font-family: Source Sans Pro;
   font-size: 18px;
   color: #FFFFFF;
