@@ -1,13 +1,61 @@
-.tweet-box {
+.tweet-box{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(255, 246, 228);
   width: 90vw;
   margin: 20px auto;
+  border: 4px solid #616161;
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 20px;
 }
 
-.tweet-header {
+.tweet-box:hover{
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.tweet-top {
+  display: flex;
+  justify-content: space-between;
   color: black;
-  justify-content: flex-start;
+}
+
+.tweet-actual {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tweet-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  border-top: 3px solid #616161;
+  font-size: 20px;
+}
+
+.fa-solid fa-heart:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.fa-solid fa-flag:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.fa-solid fa-retweet:hover {
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.author {
+  color:rgb(0, 153, 255);
+  font-size: 20px;
 }

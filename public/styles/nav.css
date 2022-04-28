@@ -4,7 +4,10 @@ nav {
   border: solid;
   border-color: #4056A1;
   border-width: 24px;
-  font-family: Bungee
+  font-family: Bungee;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navSpan {
@@ -16,5 +19,5 @@ nav {
   margin-bottom: 24px;
   font: Bungee;
   font-size: 20px;
-  color: #FFFFFF;
+  color: rgb(255, 246, 228);
 } 

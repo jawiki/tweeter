@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 246, 228);
   width: 90vw;
   margin: 20px auto;
+  border-radius: 15px;
+  padding: 20px;
 }
 .tweetForm {
   display: flex;
@@ -23,28 +25,41 @@ button {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 textarea {
   border: none;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #616161;
   outline: none;
+  background-color: rgb(255, 246, 228);
 }
 
 .buttonCounter {
   display: flex;
   justify-content: space-between;
   background: transparent;
+  font-size: 20px;
 }
 .counter {
   font-family: Bungee;
-  color: #000000;
+  color: #616161;
+  font-size: 20px;
 }
 
 h2 {
   color: #000000;
   font-family: Source Sans Pro;
+  font-size: 20px;
 }
 
 label {
   color: #000000;
   justify-content: flex-start;
+  font-size: 20px;
+}
+
+.tweet-header {
+  font-size: 20px;
 }
