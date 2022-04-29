@@ -25,16 +25,12 @@ const data = [
 
 const renderTweets = function (tweets) {
   for (let i of tweets) {
-    // createTweetElement(tweets);
-    // tweets-container.append(tweets);
     $(".tweets-container").prepend(createTweetElement(i));
   }
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
+
 };
 
 const createTweetElement = function (tweet) {
-  // let $tweet = /* Your code for creating the tweet element */
   const {user, content, created_at} = tweet
   let $tweet = $(`
   <article class="tweet-box">
@@ -49,7 +45,7 @@ const createTweetElement = function (tweet) {
             <label class="tweet-actual">${content.text}</label>
           </div>
           <div class="tweet-bottom">
-            <footer class="tweet-footer">${created_at}</footer>
+            <footer class="tweet-footer">${timeago.format(created_at)}</footer>
             <p class="dynamic-buttons">
               <i class="fa-solid fa-heart"></i>
               <i class="fa-solid fa-flag"></i>
@@ -71,15 +67,23 @@ $(document).ready(function() {
       data: $(this).serialize(), 
       method: "POST",
       success: function(){
-      $("textarea").val("")
-      $.get("/tweets", (data) => {
-        const newTweet = data.slice(-1)
-        console.log(newTweet)
-        renderTweets(newTweet);
-      });
+        $("textarea").val("")
+        $.get("/tweets", (data) => {
+          const newTweet = data.slice(-1)
+          console.log(newTweet)
+          renderTweets(newTweet);
+        });
       }
     })
   })
-  renderTweets(data);
+  // renderTweets(data);
+  const loadTweets = function () {
+    $.get("/tweets", (data) => {
+      console.log("loadTweets", data);
+      renderTweets(data);
+    });
+  }; 
+  loadTweets()
+
 
 })
