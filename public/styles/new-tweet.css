@@ -24,6 +24,7 @@ button {
   color: white;
 }
 
+
 button:hover {
   cursor: pointer;
 }
@@ -73,9 +74,4 @@ label {
   display: none;
   font-weight: bold;
   font-size: 20px;
-  font-family: Bungee;
-}
-
-.error_show {
-  display: block;
 }

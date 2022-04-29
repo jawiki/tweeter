@@ -70,7 +70,7 @@ $(document).ready(function() {
         $("textarea").val("")
         $.get("/tweets", (data) => {
           const newTweet = data.slice(-1)
-          console.log(newTweet)
+          console.log(newTweet) //check and delete existing
           renderTweets(newTweet);
         });
       }
@@ -85,5 +85,12 @@ $(document).ready(function() {
   }; 
   loadTweets()
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+  // need to implement 
+  const safeHTML = `<p>${escape(textFromUser)}</p>`;
 
 })
