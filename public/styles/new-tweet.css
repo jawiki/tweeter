@@ -1,5 +1,3 @@
-
-
 .new-tweet {
   display: flex;
   justify-content: center;
@@ -10,6 +8,7 @@
   border-radius: 15px;
   padding: 20px;
 }
+
 .tweetForm {
   display: flex;
   flex-direction: column;
@@ -43,6 +42,7 @@ textarea {
   font-size: 20px;
   margin-top: 14px;
 }
+
 .counter {
   font-family: Bungee;
   color: #616161;
@@ -63,4 +63,19 @@ label {
 
 .tweet-header {
   font-size: 20px;
+}
+
+.error {
+  color:red;
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 15px;
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Bungee;
+}
+
+.error_show {
+  display: block;
 }
