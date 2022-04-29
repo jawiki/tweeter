@@ -1,15 +1,55 @@
-/* mobile styles */
-@media only screen and (min-width: 500px) {
-
-}
+/* under 768 for phone */
 
 /* tablet styles */
-@media only screen and (min-width: 768px) {
-  
+@media (min-width: 768px) {
+.top-header {
+  background-color: #ff000077;
+}
 }
 
 /* desktop styles */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .top-header {
+  background-color: #50505077;
+    padding: 170px;
+    margin: 75px;
+    height: 500px;
+    margin-right: 150px;
+  }
 
+  body {
+    display:flex;
+    background-color: rgb(255, 246, 228);
+    justify-content: space-around;
+  }
+
+  .container {
+    background-color:rgb(255, 246, 228);
+    padding: 20px;
+    width: 100%;
+  } 
+
+  /* .tweets-container {
+    width: 60vw;
+  }
+
+  .new-tweet {
+    width: 60vw;
+  } */
+
+  .tweet-box {
+    border: 3px solid black;
+  }
+
+  .new-tweet {
+    /* border: 3px solid black; */
+  }
+
+  .tweet-bottom {
+    border-top: 3px solid #4056A1;
+  }
+
+  textarea {
+    border-bottom: 3px solid #4056A1;
+  }  
 }
-
