@@ -74,21 +74,17 @@ $(document).ready(function () {
         $("textarea").val("");
         $.get("/tweets", (data) => {
           const newTweet = data.slice(-1);
-          console.log(newTweet); //check and delete existing
           renderTweets(newTweet);
         });
       },
     });
   });
-  // renderTweets(data);
-  
+
+
   const loadTweets = function () {
     $.get("/tweets", (data) => {
-      console.log("loadTweets", data);
       renderTweets(data);
     });
   };
   loadTweets();
-
-  // need to implement
 });
