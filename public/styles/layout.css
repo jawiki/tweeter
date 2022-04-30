@@ -17,7 +17,7 @@ html {
   text-align: center;
   /* height: 30vh; */
   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-  background-color: #50505077;
+  background-color: #4057a1;
   color: #b8b8b8;
 }
 
@@ -38,7 +38,7 @@ body {
   font-family: Source Sans Pro;
   font-size: 18px;
   color: #FFFFFF;
-  background-color: #4056A1;
+  background-color: rgb(255, 246, 228);
 }
 
 p {

@@ -1,8 +1,8 @@
 nav {
-  background-color: #4056A1;
+  background-color: transparent;
   height: 120px;
   border: solid;
-  border-color: #4056A1;
+  border-color: transparent;
   border-width: 24px;
   font-family: Bungee;
   position: fixed;

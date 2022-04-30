@@ -2,18 +2,17 @@
 
 /* tablet styles */
 @media (min-width: 768px) {
-.top-header {
-  background-color: #ff000077;
-}
+  
 }
 
 /* desktop styles */
 @media (min-width: 1024px) {
   .top-header {
-  background-color: #50505077;
+    background-color: #4057a1;
     padding: 170px;
     margin: 75px;
     height: 500px;
+    width: 45%;
     margin-right: 150px;
   }
 
@@ -29,20 +28,8 @@
     width: 100%;
   } 
 
-  /* .tweets-container {
-    width: 60vw;
-  }
-
-  .new-tweet {
-    width: 60vw;
-  } */
-
   .tweet-box {
     border: 3px solid black;
-  }
-
-  .new-tweet {
-    /* border: 3px solid black; */
   }
 
   .tweet-bottom {
@@ -52,4 +39,28 @@
   textarea {
     border-bottom: 3px solid #4056A1;
   }  
+
+  nav {
+    background-color: #4056A1;
+    height: 120px;
+    border: solid;
+    border-color: #4056A1;
+    border-width: 24px;
+    font-family: Bungee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navSpan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    font: Bungee;
+    font-size: 20px;
+    color: rgb(255, 246, 228);
+  }
 }
