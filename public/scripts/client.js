@@ -1,3 +1,9 @@
+function escape(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 const data = [
   {
     user: {
@@ -27,11 +33,10 @@ const renderTweets = function (tweets) {
   for (let i of tweets) {
     $(".tweets-container").prepend(createTweetElement(i));
   }
-
 };
 
 const createTweetElement = function (tweet) {
-  const {user, content, created_at} = tweet
+  const { user, content, created_at } = tweet;
   let $tweet = $(`
   <article class="tweet-box">
           <div class="tweet-top">
@@ -42,7 +47,7 @@ const createTweetElement = function (tweet) {
             <p class="author">${user.handle}</p>
           </div>
           <div class="tweet-content">
-            <label class="tweet-actual">${content.text}</label>
+            <label class="tweet-actual">${escape(content.text)}</label>
           </div>
           <div class="tweet-bottom">
             <footer class="tweet-footer">${timeago.format(created_at)}</footer>
@@ -57,40 +62,33 @@ const createTweetElement = function (tweet) {
   return $tweet;
 };
 
-$(document).ready(function() { 
-
-  $("form").on("submit", function(e){
+$(document).ready(function () {
+  $("form").on("submit", function (e) {
     e.preventDefault();
     $.ajax({
       url: "/tweets",
       type: "application/json",
-      data: $(this).serialize(), 
+      data: $(this).serialize(),
       method: "POST",
-      success: function(){
-        $("textarea").val("")
+      success: function () {
+        $("textarea").val("");
         $.get("/tweets", (data) => {
-          const newTweet = data.slice(-1)
-          console.log(newTweet) //check and delete existing
+          const newTweet = data.slice(-1);
+          console.log(newTweet); //check and delete existing
           renderTweets(newTweet);
         });
-      }
-    })
-  })
+      },
+    });
+  });
   // renderTweets(data);
+  
   const loadTweets = function () {
     $.get("/tweets", (data) => {
       console.log("loadTweets", data);
       renderTweets(data);
     });
-  }; 
-  loadTweets()
-
-  const escape = function (str) {
-    let div = document.createElement("div");
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
   };
-  // need to implement 
-  const safeHTML = `<p>${escape(textFromUser)}</p>`;
+  loadTweets();
 
-})
+  // need to implement
+});
