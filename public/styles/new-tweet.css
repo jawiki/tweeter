@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 246, 228);
+  background-color: white;
   width: 95%;
   margin: 20px auto;
   border-radius: 15px;
@@ -33,7 +33,7 @@ textarea {
   border: none;
   border-bottom: 3px solid #4056A1;
   outline: none;
-  background-color: rgb(255, 246, 228);
+  background-color: white;
 }
 
 .buttonCounter {
