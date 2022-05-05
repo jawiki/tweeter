@@ -64,20 +64,26 @@ const createTweetElement = function (tweet) {
 
 $(document).ready(function () {
   $("form").on("submit", function (e) {
+    // console.log(e.target.value);
+    console.log($("#tweet-text").first().val());
+      if ($("#tweet-text").first().val() === "") {
+        console.log("if test");
+      } else {
+         $.ajax({
+           url: "/tweets",
+           type: "application/json",
+           data: $(this).serialize(),
+           method: "POST",
+           success: function () {
+             $("textarea").val("");
+             $.get("/tweets", (data) => {
+               const newTweet = data.slice(-1);
+               renderTweets(newTweet);
+             });
+           },
+         });
+      }
     e.preventDefault();
-    $.ajax({
-      url: "/tweets",
-      type: "application/json",
-      data: $(this).serialize(),
-      method: "POST",
-      success: function () {
-        $("textarea").val("");
-        $.get("/tweets", (data) => {
-          const newTweet = data.slice(-1);
-          renderTweets(newTweet);
-        });
-      },
-    });
   });
 
 
