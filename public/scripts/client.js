@@ -67,8 +67,11 @@ $(document).ready(function () {
     // console.log(e.target.value);
     console.log($("#tweet-text").first().val());
       if ($("#tweet-text").first().val() === "") {
-        console.log("if test");
+        $("#tweet-error").addClass("error");
+        $("#tweet-error").slideDown(400);
       } else {
+        $("#tweet-error").removeClass("error");
+        $("#tweet-error").slideUp(400);
          $.ajax({
            url: "/tweets",
            type: "application/json",

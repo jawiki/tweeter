@@ -10,14 +10,10 @@ $("#tweet-text").on("input", function () {
     $("#tweet-error").slideDown(400);
     $(".submit-button").prop("disabled", true);
   } 
-  // if ($(this).val().length === 0) {
-  //   $("#tweet-error").addClass("error");
-  // }
   else {
     $("#tweet-error").removeClass("error");
     $("#tweet-error").slideUp(400);
     $(".submit-button").prop("disabled", false);
   }
-  console.log($(this).val.length);
 });
 });
